@@ -8,7 +8,7 @@ import (
 
 /**
 实例
- */
+*/
 type Instance struct {
 	Name string
 	Path string
