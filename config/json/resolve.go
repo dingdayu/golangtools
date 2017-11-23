@@ -1,3 +1,10 @@
+// Copyright 2017 <614422099@qq.com>. All rights reserved.
+// Use of this source code is governed by a Apache
+// license that can be found in the LICENSE file.
+
+// json file resolve.
+//
+// https://github.com/dingdayu/golangtools
 package json
 
 import (
