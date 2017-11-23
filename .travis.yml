@@ -1,0 +1,17 @@
+language: go
+
+sudo: false
+
+go:
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+  - tip
+
+install:
+  - go get -t -u github.com/dingdayu/golangtools
+
+script:
+  - export PATH="$PATH:$HOME/gopath/bin"
+  - make test
