@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config version="1">
+    <Port>8080</Port>
+    <Instance>
+        <Name>gitbook</Name>
+        <Path>/gitbook</Path>
+        <Cmd>ls</Cmd>
+        <Cmd>ll</Cmd>
+        <User>dingdayu</User>
+    </Instance>
+</config>
