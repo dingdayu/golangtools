@@ -10,7 +10,7 @@ go:
   - tip
 
 install:
-  - go get -t -u github.com/dingdayu/golangtools
+  - go get -t -u github.com/dingdayu/golangtools/example/config
 
 script:
   - export PATH="$PATH:$HOME/gopath/bin"
