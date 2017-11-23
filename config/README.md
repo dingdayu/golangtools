@@ -7,6 +7,19 @@ Golang Tools Config Support：
 - Toml
 - Xml
 
+## Install
+
+```
+go get github.com/dingdayu/golangtools/config
+```
+
+Or
+
+```
+go get gitee.com/dingdayu/golangtools/config
+```
+
+
 ## Example
 
 ### json
