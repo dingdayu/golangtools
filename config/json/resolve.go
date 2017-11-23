@@ -1,8 +1,8 @@
 package json
 
 import (
-	"encoding/json"
 	"bytes"
+	"encoding/json"
 )
 
 func Unmarshal(f []byte, result interface{}) error {

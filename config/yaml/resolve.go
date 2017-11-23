@@ -1,8 +1,8 @@
 package yaml
 
 import (
-	"gopkg.in/yaml.v2"
 	"github.com/goinggo/mapstructure"
+	"gopkg.in/yaml.v2"
 )
 
 func Unmarshal(f []byte, result interface{}) error {

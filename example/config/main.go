@@ -1,28 +1,28 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/dingdayu/golangtools/config"
-	"flag"
 )
 
 // 实例
 type Instance struct {
-	Name 	string
-	Path	string
-	Cmd		[]string
-	User	string
+	Name string
+	Path string
+	Cmd  []string
+	User string
 }
 
 // 配置
 type Config struct {
-	Port int
+	Port     int
 	Instance []Instance
 }
 
 func main() {
 
-	file := flag.String("c","conf.json","config file path")
+	file := flag.String("c", "conf.json", "config file path")
 	flag.Parse()
 
 	var conf Config

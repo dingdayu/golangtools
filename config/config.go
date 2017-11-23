@@ -1,18 +1,18 @@
 package config
 
 import (
-	"path"
-	"strings"
-	"io/ioutil"
 	"errors"
 	"github.com/dingdayu/golangtools/config/ini"
-	"github.com/dingdayu/golangtools/config/yaml"
 	"github.com/dingdayu/golangtools/config/json"
-	"github.com/dingdayu/golangtools/config/xml"
 	"github.com/dingdayu/golangtools/config/toml"
+	"github.com/dingdayu/golangtools/config/xml"
+	"github.com/dingdayu/golangtools/config/yaml"
+	"io/ioutil"
+	"path"
+	"strings"
 )
 
-func New(f string, c interface{}) error  {
+func New(f string, c interface{}) error {
 
 	buf, err := ioutil.ReadFile(f)
 	if err != nil {
@@ -22,7 +22,7 @@ func New(f string, c interface{}) error  {
 	//fmt.Println(string(buf))
 
 	fileSuffix := getFileSuffix(f)
-	
+
 	switch fileSuffix {
 	case "json":
 		err = json.Unmarshal(buf, c)
@@ -37,11 +37,11 @@ func New(f string, c interface{}) error  {
 	default:
 		err = errors.New("格式不支持")
 	}
-	return  err
+	return err
 }
 
 // 自动获取文件后缀
-func getFileSuffix (f string) string  {
+func getFileSuffix(f string) string {
 	filePath := path.Base(f)
 	fileSuffix := path.Ext(filePath)
 	return strings.Trim(fileSuffix, ".")
