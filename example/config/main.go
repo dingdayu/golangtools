@@ -1,10 +1,10 @@
-package config
+package main
 
 import (
-	"github.com/dingdayu/config"
 	"fmt"
 	"os/signal"
 	"os"
+	"github.com/dingdayu/golangtools/config"
 )
 
 // 实例
@@ -48,7 +48,7 @@ func main() {
 
 func ParserJson()  {
 	var conf Config
-	err := config.New("conf.toml", &conf)
+	err := config.New("conf.json", &conf)
 	if err != nil {
 		fmt.Println(err.Error())
 	}

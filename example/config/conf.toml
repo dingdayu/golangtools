@@ -3,3 +3,4 @@ Port=8080
     Name="gitbook"
     Path="/gitbook"
     Cmd=["ll","ls"]
+    User="dingdayu"
