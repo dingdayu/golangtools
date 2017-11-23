@@ -1,5 +1,28 @@
 version: "{build}"
 
+# doc: https://www.appveyor.com/docs/appveyor-yml/
+
+# branches to build
+branches:
+  # whitelist
+  only:
+    - master
+
+  # blacklist
+  except:
+    - gh-pages
+
+# Do not build on tags (GitHub and BitBucket)
+skip_tags: true
+
+# Start builds on tags only (GitHub and BitBucket)
+skip_non_tags: true
+
+# Skipping commits with particular message or from specific user
+skip_commits:
+  message: /Created.*\.(png|jpg|jpeg|bmp|gif|md)/      # Regex for matching commit message
+
+
 # Source Config
 clone_folder: c:\gopath\src\github.com\dingdayu\golangtools
 
@@ -35,3 +58,13 @@ test_script:
   - go build
   - dir /a *
   - config.exe -c conf.json
+
+notifications:
+
+  # Email
+  - provider: Email
+    to:
+      - 614422099@qq.com
+    subject: 'Build {{status}}'                  # optional
+    message: "{{message}}, {{commitId}}, ..."    # optional
+    on_build_status_changed: true
