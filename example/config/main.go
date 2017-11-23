@@ -6,7 +6,9 @@ import (
 	"github.com/dingdayu/golangtools/config"
 )
 
-// 实例
+/**
+实例
+ */
 type Instance struct {
 	Name string
 	Path string
