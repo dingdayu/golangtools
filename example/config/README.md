@@ -23,3 +23,13 @@ dep ensure
 ```
 go get github.com/dingdayu/golangtools/example/config
 ```
+
+## RUN
+
+```
+config -c example/config/conf.json
+```
+
+```
+{8080 [{gitbook /gitbook [ls ll] dingdayu}]}
+```

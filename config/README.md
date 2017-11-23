@@ -34,7 +34,16 @@ Golang Tools Config Support：
 	fmt.Println(conf)
 ```
 
-> 参加 [example/config/main.go](example/config/main.go)
+Run:
+
+```
+go run ../example/config/main.go -c ../example/config/conf.json
+{8080 [{gitbook /gitbook [ll ls] dingdayu}]}
+```
+
+> 请注意路径！
+
+> 参见 [example/config/main.go](example/config/main.go)
 
 ### xml
 
@@ -90,7 +99,7 @@ Golang Tools Config Support：
 	fmt.Println(conf)
 ```
 
-> 参加 [example/config/main.go](example/config/main.go)
+> 参见 [example/config/main.go](example/config/main.go)
 
 ### yaml
 
@@ -118,4 +127,4 @@ Golang Tools Config Support：
 	fmt.Println(conf)
 ```
 
-> 参加 [example/config/main.go](example/config/main.go)
+> 参见 [example/config/main.go](example/config/main.go)
