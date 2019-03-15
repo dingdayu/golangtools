@@ -16,8 +16,8 @@ Golang Tools
 - [Config](/config)
 
 
-### Sponsor
+### Donate
 
 <p align="center">
-    <img width="400" src="https://github.com/dingdayu/jetbrians/blob/master/images/merge.png"></img>
+    <img width="400" src="https://github.com/dingdayu/golangtools/blob/master/donate.png"></img>
 </p>
